@@ -5,19 +5,26 @@ import { myData } from "./data"
 
 export const SearchPage = () => {
     const [text, setText] = useState("")
+    const [data, setData] = useState([])
     const [fdata, setFdata] = useState([])
     // console.log(fdata)
     console.log(myData)
-    // useEffect(() => {
-    //     getData()
-    // }, []);
+    useEffect(() => {
+        getData()
+    }, []);
 
-    
+    const getData = () => {
+        axios.get("https://fast-reef-22226.herokuapp.com/data").then((d) => {
+            // console.log(d)
+            setData(d)
+        }).then(setData())
+
+    }
     return (<>
         <div className="navbar">
             <div>
                 <Link to="/">
-                    <img className="logo" src="https://image.similarpng.com/very-thumbnail/2020/12/Flat-design-Google-logo-design-Vector-PNG.png" alt=""></img>
+                    <img className="logo" src="https://image.similarpng.com/very-thumbnail/2020/12/Flat-design-Google-logo-design-Vector-PNG.png"></img>
                 </Link>
             </div>
             <div>
