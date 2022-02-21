@@ -12,13 +12,7 @@ export const SearchPage = () => {
         getData()
     }, []);
 
-    const getData = () => {
-        axios.get("https://fast-reef-22226.herokuapp.com/data").then((d) => {
-            // console.log(d)
-            setData(d)
-        }).then(setData())
-
-    }
+    
     return (<>
         <div className="navbar">
             <div>
