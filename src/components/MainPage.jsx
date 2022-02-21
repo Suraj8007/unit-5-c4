@@ -10,10 +10,7 @@ export const MainPage = () => {
     console.log(fdata)
     // console.log(text)
     // console.log(data)
-    useEffect(() => {
-        getData()
-    }, []);
-
+   
    
     return (
         <div>

@@ -8,9 +8,9 @@ export const SearchPage = () => {
     const [fdata, setFdata] = useState([])
     // console.log(fdata)
     console.log(myData)
-    useEffect(() => {
-        getData()
-    }, []);
+    // useEffect(() => {
+    //     getData()
+    // }, []);
 
     
     return (<>
