@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"
 import {myData} from "./data"
 export const MainPage = () => {
     const [text, setText] = useState("")
-    const [data, setData] = useState([])
     const [fdata, setFdata] = useState([])
     console.log(fdata)
     // console.log(text)
@@ -25,16 +24,9 @@ export const MainPage = () => {
     return (
         <div>
             <Link to="/search">
-            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"></img></div>
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt=''></img></div>
             <input onChange={(e) => setText(e.target.value)} onKeyPress={(e) => {
-                if (e.key === "Enter") {
-                    setFdata(myData.filter((a) => {
-                        if (a.title == text) {
-                            return a;
-                        }
-                        //    console.log(D)
-                    }))
-                }
+               
 
             }} className="search-box" type="text" />
             {/* <div>

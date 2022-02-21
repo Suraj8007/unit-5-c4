@@ -5,7 +5,6 @@ import { myData } from "./data"
 
 export const SearchPage = () => {
     const [text, setText] = useState("")
-    const [data, setData] = useState([])
     const [fdata, setFdata] = useState([])
     // console.log(fdata)
     console.log(myData)
@@ -24,7 +23,7 @@ export const SearchPage = () => {
         <div className="navbar">
             <div>
                 <Link to="/">
-                    <img className="logo" src="https://image.similarpng.com/very-thumbnail/2020/12/Flat-design-Google-logo-design-Vector-PNG.png"></img>
+                    <img className="logo" src="https://image.similarpng.com/very-thumbnail/2020/12/Flat-design-Google-logo-design-Vector-PNG.png" alt=""></img>
                 </Link>
             </div>
             <div>
